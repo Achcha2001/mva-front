@@ -1,0 +1,158 @@
+/* Container Styling */
+.executive-committee-container {
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  width: 100vw; /* Ensure it covers the entire viewport width */
+  height: 100vh; /* Full screen height */
+  position: relative;
+  overflow: hidden; /* Hide any overflow from the container */
+}
+
+.exco {
+  width: 100vw;
+  height: 100vh; /* Full screen height */
+  object-fit: cover; /* Cover the entire area without stretching */
+}
+.press{
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 30px;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.carousel-item {
+  position: relative;
+  height: 100%; /* Make sure each item fills the height of the container */
+}
+
+.carousel-container1 {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Center the caption */
+  text-align: center;
+  color: #ffffff;
+  background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+  padding: 20px 40px;
+  border-radius: 10px;
+}
+
+.overlay-text1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Add a nice shadow for better readability */
+}
+
+/* Speech Section Styling */
+.speech-content h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #343a40;
+  margin-bottom: 20px;
+}
+
+.speech-content p {
+  font-size: 0.8rem;
+  line-height: 1.0;
+  color: #555;
+  margin-left: -10px;
+}
+
+.speech-content span {
+  font-weight: bold;
+  color: #473a04; /* Highlighted text for names and positions */
+  font-size: 1.2rem;
+}
+
+
+
+/* Executive Committee Section */
+.executive-committee-container h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 50px;
+  color: #343a40;
+  text-transform: uppercase;
+}
+
+.committee-member-image {
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  max-width: 150px;
+  max-height: 150px;
+
+}
+
+.committee-member-image:hover {
+  transform: scale(1.05); /* Enlarge the image slightly on hover */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15); /* Add a shadow */
+}
+
+h5 {
+  font-size: 1.0rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+p {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* General Styles */
+.text-center {
+  text-align: center;
+}
+
+.mt-5 {
+  margin-top: 3rem !important;
+  
+}
+.prs{
+  background: linear-gradient(270deg, rgb(172, 172, 172), rgb(220, 217, 217), rgba(169, 169, 197, 0.801), rgba(124, 146, 129, 0.801));
+  background-size: 400% 400%; /* This makes the gradient "move" */
+  animation: gradientAnimation 10s ease infinite; /* Animation properties */
+  border-radius: 40px;
+
+}
+.scr{
+  background: linear-gradient(270deg, rgb(172, 172, 172), rgb(220, 217, 217), rgba(116, 116, 130, 0.801), rgba(210, 225, 214, 0.801));
+  background-size: 400% 400%; /* This makes the gradient "move" */
+  animation: gradientAnimation 10s ease infinite; /* Animation properties */
+  border-radius: 40px;
+}
+.ex{
+  background: linear-gradient(270deg, rgb(172, 172, 172), rgb(220, 217, 217), rgba(116, 116, 130, 0.801), rgba(64, 249, 104, 0.801),rgba(255, 217, 0, 0.546),rgba(53, 53, 215, 0.795));
+  background-size: 400% 400%; /* This makes the gradient "move" */
+  animation: gradientAnimation 13s ease infinite; /* Animation properties */
+  border-radius: 30px;
+margin-bottom: -10px;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}

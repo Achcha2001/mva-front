@@ -1,0 +1,350 @@
+/* Updated CSS for Carousel */
+.carousel {
+  width: 100%;
+  transition: transform 3s ease-in-out; /* Smooth transition */
+}
+
+.carousel img {
+  width: 100%;
+  height: 550px;
+  object-fit: cover; /* Maintain aspect ratio while covering entire space */
+}
+
+/* Adjust the image height for smaller screens */
+@media (max-width: 768px) {
+  .carousel img {
+      height: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel img {
+      height: 300px;
+  }
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.6); /* Slightly darker background for better readability */
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+/* Caption heading */
+.carousel-caption h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Caption paragraph */
+.carousel-caption p {
+  font-size: 1.3rem;
+}
+
+/* Adjust font size for smaller screens */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+      font-size: 1.5rem;
+  }
+
+  .carousel-caption p {
+      font-size: 1rem;
+  }
+}
+/* Scorecard Section */
+.scorecard-section {
+  padding: 20px;
+  background-color: #f7f7f7;
+}
+
+.scorecard-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Horizontally scrollable container */
+.scorecard-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.scorecard-container::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for better aesthetics */
+}
+
+.scorecard-item {
+  min-width: 250px;
+  margin-right: 15px;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.scorecard-item h4 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.scorecard-item p {
+  font-size: 1rem;
+}/* Sponsors Section */
+.sponsors-section {
+  padding: 50px 0;
+  background: linear-gradient(to right, #191c5c, #8f94fb, rgb(31, 114, 31), rgb(181, 181, 35));
+  color: white;
+  text-align: center;
+  background-size: 400% 400%; /* This makes the gradient "move" */
+  animation: gradientAnimation 10s ease infinite; /* Animation properties */
+  border-radius: 10px;
+}
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.sponsors-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Container for scrolling logos */
+.sponsors-container {
+  /* overflow: hidden;  */
+  white-space: nowrap; /* Keep logos in one horizontal line */
+  display: flex;
+  align-items: center;
+  position: relative;
+  animation: scroll 30s linear infinite; /* Scroll effect */
+}
+
+/* Sponsor Category */
+.sponsor-category {
+  display: inline-block;
+  margin: 0 50px; /* Space between categories */
+  text-align: center;
+}
+
+.sponsor-logos {
+  display: flex;
+  gap: 20px; /* Space between logos */
+}
+
+.sponsor-logos img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Category title */
+.sponsor-category h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #f8f9fa;
+}
+
+/* Scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.sponsors-container {
+  animation-duration: 20s; /* Adjust speed */
+}
+
+.sponsors-container:hover {
+  animation-play-state: paused; /* Pause on hover for readability */
+}
+
+/* Debugging borders (optional, remove after testing) */
+
+
+/* Adjust scroll speed for larger screens */
+@media (min-width: 1024px) {
+  .sponsors-container {
+    animation-duration: 50s;
+  }
+}/* Highlights section styling */
+.highlights-section {
+  margin: 50px 0;
+  text-align: center;
+  padding: 50px 20px;
+  background: url('/public/images/voll-back.jpg') no-repeat center center;
+  background-size: cover; /* Ensure the background covers the entire section */
+  position: relative;
+  color: #ffffff;
+  box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5); /* Add depth with an inner shadow */
+}
+
+/* Overlay effect to make text more readable */
+.highlights-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay for better text readability */
+  z-index: 1;
+}
+
+.highlights-section h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  z-index: 2;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Add shadow to the title for emphasis */
+}
+
+.highlights-section p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  z-index: 2;
+  position: relative;
+}
+
+.collage-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Adjust the number of columns */
+  grid-auto-rows: 200px; /* Default row height */
+  gap: 0; /* Remove the gaps */
+  z-index: 2;
+  position: relative;
+  margin-bottom: 30px; /* Add spacing below */
+}
+
+/* Base styles for collage items */
+.collage-item {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border: 3px solid white; /* Thinner border for a cleaner look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds depth */
+  transition: transform 0.5s, opacity 0.5s ease-in-out;
+  animation: switchImages 12s infinite; /* Loop images */
+  z-index: 2;
+}
+
+.collage-item:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Large item spanning more space */
+.collage-item-large {
+  grid-column: span 2; /* Span across 2 columns */
+  grid-row: span 2; /* Span across 2 rows */
+  border-radius: 50px;
+}
+
+/* Medium item spanning less space */
+.collage-item-medium {
+  grid-column: span 2;
+  grid-row: span 1;
+  border-radius: 30px;
+}
+
+/* Small item taking up default space */
+.collage-item-small {
+  grid-column: span 1;
+  grid-row: span 1;
+  border-radius: 50px;
+}
+
+@keyframes switchImages {
+  0%, 100% { opacity: 1; }
+  20%, 25% { opacity: 0; }
+  45%, 50% { opacity: 1; }
+}
+
+/* Delaying the image animations */
+.collage-item:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.collage-item:nth-child(2) {
+  animation-delay: 2s;
+}
+
+.collage-item:nth-child(3) {
+  animation-delay: 4s;
+}
+
+.collage-item:nth-child(4) {
+  animation-delay: 6s;
+}
+
+.collage-item:nth-child(5) {
+  animation-delay: 8s;
+}
+
+.collage-item:nth-child(6) {
+  animation-delay: 10s;
+}
+.collage-item:nth-child(7) {
+  animation-delay: 12s;
+}
+
+/* Add a subtle bounce effect to the heading */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.highlights-section h2 {
+  animation: bounceIn 1s ease;
+}
+
+/* Add a button to view more highlights */
+.view-more-btn {
+  background:  linear-gradient(to right,rgba(255, 255, 255, 0.742), #191c5cc4, #8f94fb, rgb(31, 114, 31), rgb(181, 181, 35));;
+  color: #ded2d2;
+  box-shadow: white;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+  
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background-color: #e6b800;
+  color: #fff;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+

@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Gallery from './components/Gallery';
+import Contact from './components/Contact';
+import News from './components/News';
+import History from './components/History'; 
+import Circulars from './components/Circular';
+import TeamRanking from './components/Ranks';
+import ExecutiveCommittee from './components/ExecutiveCommittee';
+import Login from './components/Login';
+import Footer from './components/Footer';   
+import TournamentGraph from './components/graphs';
+import AdminPortal from './components/AdminPortal';
+import MainLayout from './components/MainLayout'; // Add this import for layout
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        {/* Non-admin routes with Navbar and Footer */}
+        <Route path="/*" element={<MainLayout />} />
+
+        {/* Admin routes without Navbar and Footer */}
+        <Route path="/admin" element={<AdminPortal />} />
+      </Routes>
+    </Router>
   );
 }
 
