@@ -1,14 +1,14 @@
 import React from 'react';
+import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import { Navbar, Nav, Container, Button } from 'react-bootstrap';
-import './Navbar.css';  
+import './Navbar.css';
 
 function CustomNavigationBar() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={NavLink} to="/" className="custom-navbar-brand">
-          <img src="/images/logo-mva.png" alt="MVA Logo" id="custom-navbar-logo" />
+          <img src="../images/logo-mva.png" alt="MVA Logo" id="custom-navbar-logo" />
         </Navbar.Brand>
 
         <Navbar.Toggle aria-controls="custom-navbar-nav" className="custom-navbar-toggler" />

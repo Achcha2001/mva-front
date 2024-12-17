@@ -33,7 +33,7 @@ function ExecutiveCommittee() {
             <Carousel.Item>
               <img
                 className="exco"
-                src="/images/group pic.jpg"
+                src="../images/group pic.jpg"
                 alt="Group Picture 1"
               />
               <Carousel.Caption>
@@ -44,7 +44,7 @@ function ExecutiveCommittee() {
             <Carousel.Item>
               <img
                 className="exco"
-                src="/images/group-pic1.jpg"
+                src="../images/group-pic1.jpg"
                 alt="Group Picture 2"
               />
               <Carousel.Caption>
@@ -61,7 +61,7 @@ function ExecutiveCommittee() {
         <Col md={4}>
           <img 
             className="press" 
-            src="/images/mva-president.jpg" 
+            src="../images/mva-president.jpg" 
             alt="President's Speech Image" 
           />
         </Col>
@@ -98,7 +98,7 @@ function ExecutiveCommittee() {
         <Col md={4}>
           <img 
             className="press" 
-            src="/images/mva-gs.jpg" 
+            src="../images/mva-gs.jpg" 
             alt="General Secretary's Speech Image" 
           />
         </Col>

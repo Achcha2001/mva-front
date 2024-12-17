@@ -69,7 +69,7 @@ function Home() {
           <div className="sponsor-category">
             <h3>Silver Sponsor</h3>
             <div className="sponsor-logos">
-              <img src="/images/lanka-tiles.jpg" alt="Silver Sponsor" />
+              <img href="/images/lanka-tiles.jpg" alt="Silver Sponsor" />
               <img src="/images/Aburnet.jpg" alt="Silver Sponsor" />
               <img src="/images/best-pacific.jpeg" alt="Silver Sponsor" />
               <img src="/images/davidp.png" alt="Silver Sponsor" />
