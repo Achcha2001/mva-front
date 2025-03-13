@@ -156,3 +156,17 @@ margin-bottom: -10px;
   max-width: 100%;
   height: auto;
 }
+
+.ex25 {
+  width: 100vw; /* Full viewport width */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Prevents any overflow issues */
+}
+
+.ex25 img {
+  width: 100vw; /* Full viewport width */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: cover; /* Ensures the image fills the space without distortion */
+}

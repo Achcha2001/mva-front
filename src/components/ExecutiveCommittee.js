@@ -54,9 +54,12 @@ function ExecutiveCommittee() {
           </Carousel>
         </Col>
       </Row>
+      <div className='ex25'>
+        <img  src='../images/new-2025.jpg'></img>
+      </div>
 
       {/* President's Speech Section */}
-      <div className='prs'>
+      {/* <div className='prs'>
       <Row className="mt-5">
         <Col md={4}>
           <img 
@@ -90,7 +93,7 @@ function ExecutiveCommittee() {
           <span>Saman Weerasuriya<br></br>President of MVA</span>
         </Col>
       </Row>
-      </div>
+      </div> */}
 
       {/* General Secretary's Speech Section */}
       <div className='scr'>
