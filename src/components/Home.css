@@ -156,7 +156,9 @@
   font-size: 1.5rem;
   color: #f8f9fa;
 }
-
+.tt{
+  color: white;
+}
 /* Scrolling animation */
 @keyframes scroll {
   0% {
@@ -346,4 +348,81 @@
   color: #fff;
   transform: scale(1.1); 
   transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+.circular-banner {
+  background: linear-gradient(90deg, #001f3f, #007bff, #ffcc00);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  margin: 40px 0;
+  border-radius: 0;
+  width: 100vw;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  animation: slide-in 0.8s ease-out;
+  overflow: hidden;
+}
+
+.circular-banner h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  animation: blink-text 1.2s ease-in-out infinite;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.9),
+               0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.circular-banner p {
+  font-size: 1.25rem;
+  margin-bottom: 25px;
+}
+
+.circular-banner-btn {
+  display: inline-block;
+  background-color: #dc3545;
+  color: white;
+  padding: 12px 28px;
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  animation: blink-button 1.4s ease-in-out infinite;
+  transition: transform 0.3s ease;
+}
+
+.circular-banner-btn:hover {
+  transform: scale(1.07);
+  background-color: #c82333;
+}
+
+/* Blinking text */
+@keyframes blink-text {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+/* Blinking button glow */
+@keyframes blink-button {
+  0%, 100% {
+    box-shadow: 0 0 10px #dc3545, 0 0 20px #dc3545;
+  }
+  50% {
+    box-shadow: 0 0 2px #dc3545, 0 0 8px #dc3545;
+  }
+}
+
+/* Slide in entrance */
+@keyframes slide-in {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

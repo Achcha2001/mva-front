@@ -49,6 +49,13 @@ function Home() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
+      {/* Announcement Banner */}
+<div className="circular-banner">
+  <h2>📢 2025 Circulars Out Now!</h2>
+  <p className='tt'>All team applications, rules, and forms are now available.</p>
+  <a href="/circulars" className="circular-banner-btn">View Circulars</a>
+</div>
+
 
       {/* Our Sponsors Section */}
       <div className="sponsors-section">
