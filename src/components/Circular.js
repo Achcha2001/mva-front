@@ -41,8 +41,8 @@ const circulars = [
     description: "Official invitation and details for 2025 tournament.",
   },
   {
-    title: "Rules and Regulations",
-    filename: "MVA Rules and Regulations.pdf",
+    title: "Rules and Regulations for 2025",
+    filename: "MVA Rules and Regulations 2025- Amended.pdf",
     category: "Rules",
     description: "All tournament guidelines and eligibility criteria.",
   }

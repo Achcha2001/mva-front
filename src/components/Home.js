@@ -51,9 +51,9 @@ function Home() {
       </Carousel>
       {/* Announcement Banner */}
 <div className="circular-banner">
-  <h2>📢 2025 Circulars Out Now!</h2>
-  <p className='tt'>All team applications, rules, and forms are now available.</p>
-  <a href="/circulars" className="circular-banner-btn">View Circulars</a>
+  <h2>📢 Dates Announced: 2025 MVA Tournament</h2>
+  <p className='tt'>MVA Tournament will be held on the 23rd & 24th of August 2025 at Sir Albert F. Peiris Stadium and Grounds, Wennappuwa.</p>
+  <a href="/circulars" className="circular-banner-btn">View Circulars & Regulations</a>
 </div>
 
 
