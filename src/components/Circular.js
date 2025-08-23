@@ -1,9 +1,46 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { FaEye, FaFilePdf } from 'react-icons/fa';
 import './Circular.css';
 import welcomeImage from './images/h2.jpg';
-import { FaFilePdf, FaEye } from 'react-icons/fa';
 
 const circulars = [
+  {
+  title: "MVA 2025 Match Schedule",
+  filename: "MVA 2025 Match Schdule.pdf",
+  category: "Tournament",
+  description: "Official match schedule for the 2025 MVA Tournament.",
+},
+// {
+//   title: "MVA 2025 Draw – Super League",
+//   filename: "MVA 2025 draw-Super League.pdf",
+//   category: "Tournament",
+//   description: "Super League draw for the 2025 MVA Tournament.",
+// },
+{
+  title: "MVA 2025 Draw – A division M-B",
+  filename: "MVA 2025 draw-Adivision-M-B.pdf",
+  category: "Tournament",
+  description: "Division M-B draw for the 2025 MVA Tournament.",
+},
+{
+  title: "MVA 2025 Draw – Championship",
+  filename: "MVA 2025 draw-Championship.pdf",
+  category: "Tournament",
+  description: "Championship draw for the 2025 MVA Tournament.",
+},
+{
+  title: "MVA 2025 Draw – Masters",
+  filename: "MVA 2025 draw-Masters.pdf",
+  category: "Tournament",
+  description: "Masters division draw for the 2025 MVA Tournament.",
+},
+{
+  title: "MVA 2025 Draw – A division M-A",
+  filename: "MVA 2025 draw-Adivision-M-A.pdf",
+  category: "Tournament",
+  description: "Division M-A draw for the 2025 MVA Tournament.",
+},
+
   {
     title: "Member Registration Form",
     filename: "Member Registration Form of Mercantile Volleyball Association of Sri Lanka.pdf",
