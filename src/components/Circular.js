@@ -22,6 +22,7 @@ const circulars = [
     category: "Application",
     description: "For teams participating in the Championship category.",
   },
+  
   {
     title: "Team Application - Super League",
     filename: "MVA-Team-Application-Super-League.pdf",
