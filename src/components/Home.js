@@ -18,7 +18,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/images/h15.jpg"
+            src="/images/wm5.jpg"
             alt="First slide"
           />
           <Carousel.Caption>
@@ -29,7 +29,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/images/slideshow2.png"
+            src="/images/wm3.jpg"
             alt="Second slide"
           />
           <Carousel.Caption>
@@ -40,7 +40,7 @@ function Home() {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="/images/slideshow3.png"
+            src="/images/wm1.jpg"
             alt="Third slide"
           />
           <Carousel.Caption>
@@ -112,10 +112,10 @@ function Home() {
         {/* Collage Section */}
         <div className="collage-container">
           {/* First 6 images */}
-          <img src="/images/h1.jpg" alt="Highlight 1" className="collage-item collage-item-large" />
-          <img src="/images/h2.jpg" alt="Highlight 2" className="collage-item collage-item-medium" />
-          <img src="/images/h3.jpg" alt="Highlight 3" className="collage-item collage-item-small" />
-          <img src="/images/h4.jpg" alt="Highlight 4" className="collage-item collage-item-medium" />
+          <img src="/images/wm6.jpg" alt="Highlight 1" className="collage-item collage-item-large" />
+          <img src="/images/wm7.jpg" alt="Highlight 2" className="collage-item collage-item-medium" />
+          <img src="/images/wm9.jpg" alt="Highlight 3" className="collage-item collage-item-small" />
+          <img src="/images/wm2.jpg" alt="Highlight 4" className="collage-item collage-item-medium" />
           <img src="/images/h6.jpg" alt="Highlight 6" className="collage-item collage-item-small" />
          
 
