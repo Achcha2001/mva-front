@@ -51,16 +51,15 @@ function Home() {
       </Carousel>
       {/* Announcement Banner */}
 <div className="circular-banner">
-  <h2>📢 MVA Tournament 2026 Now Open</h2>
+  <h2>📢 MVA Tournament 2026 has begun</h2>
 
   <p className='tt'>
-    Mercantile Volleyball Tournament 2026 has officially been launched. 
-    Teams are invited to participate across all categories.
+   It is with great pleasure that we would like to announce to you that the preliminary matches of the Mercantile Volleyball Tournament 2026 <br></br>will be happening on the 1st & 2nd of August <br></br> At <b>Nattandiya Dhammissara College Premises.</b>
   </p>
 
-  <p className='tt' style={{ marginTop: '10px', fontWeight: '500' }}>
+  {/* <p className='tt' style={{ marginTop: '10px', fontWeight: '500' }}>
     <strong>Deadline:</strong> Friday, 31st of July 2026
-  </p>
+  </p> */}
 
   <a href="/circulars" className="circular-banner-btn">
     View Circulars & Regulations
@@ -73,17 +72,19 @@ function Home() {
           <div className="sponsor-category">
             <h3>Platinum Sponsor</h3>
             <div className="sponsor-logos">
-              <img src="/images/mas.png" alt="Platinum Sponsor" />
+              <img src="/images/avant-logo.png" alt="Platinum Sponsor" />
               <img src="/images/maliban.png" alt="Platinum Sponsor" />
             </div>
           </div>
           <div className="sponsor-category">
             <h3>Gold Sponsor</h3>
             <div className="sponsor-logos">
-              <img src="/images/ocl.png" alt="Gold Sponsor" />
+              <img src="/images/link-new.png" alt="Gold Sponsor" />
+              <img src="/images/slt-new.png" alt="Gold Sponsor" />
+              <img src="/images/omega-new.png" alt="Gold Sponsor" />
             </div>
           </div>
-          <div className="sponsor-category">
+          {/* <div className="sponsor-category">
             <h3>Silver Sponsor</h3>
             <div className="sponsor-logos">
               <img href="/images/lanka-tiles.jpg" alt="Silver Sponsor" />
@@ -91,14 +92,15 @@ function Home() {
               <img src="/images/best-pacific.jpeg" alt="Silver Sponsor" />
               <img src="/images/davidp.png" alt="Silver Sponsor" />
             </div>
-          </div>
+          </div> */}
           <div className="sponsor-category">
             <h3>Bronze Sponsor</h3>
             <div className="sponsor-logos">
-              <img src="/images/omegaline.jpg" alt="Bronze Sponsor" />
+              {/* <img src="/images/omegaline.jpg" alt="Bronze Sponsor" />
               <img src="/images/slt.png" alt="Bronze Sponsor" />
-              <img src="/images/brandix.png" alt="Bronze Sponsor" />
-              <img src="/images/link.png" alt="Bronze Sponsor" />
+              <img src="/images/brandix.png" alt="Bronze Sponsor" /> */}
+              <img src="/images/lanka-tiles-new.jpg" alt="Bronze Sponsor" />
+              <img src="/images/cdb.jpg" alt="Bronze Sponsor" />
             </div>
           </div>
         </div>
