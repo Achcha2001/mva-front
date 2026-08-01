@@ -74,6 +74,7 @@ function Home() {
             <div className="sponsor-logos">
               <img src="/images/avant-logo.png" alt="Platinum Sponsor" />
               <img src="/images/maliban.png" alt="Platinum Sponsor" />
+              <img src="/images/mas.png" alt="Platinum Sponsor" />
             </div>
           </div>
           <div className="sponsor-category">
